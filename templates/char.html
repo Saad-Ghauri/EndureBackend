@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+  Inventory - Characteristics
+{% endblock %}
+
+{% block content %} 
+
+
+    
+
+<div class="flex justify-between container m-5">
+
+
+        <div class="flex flex-col w-1/2 space-y-5 font-semibold text-sm">
+
+            <h3>General</h3>
+            <h3>Description</h3>
+            <p class="w-80">Endotracheal Tubes are primarily used during intubation to help maintain steady airflow to patients</p>
+            <h3>Notes</h3>
+            <p class="w-80">It seems like most physicians like the curvature of this Endotracheal Tube more than the version from Cardinal Health.</p>
+
+
+            <div class="flex justify-between items-center space-x-2 ">
+                <div class="space-y-3">
+                <h3 class="text">Manufacturing</h3>
+                <div class="flex items-center space-x-3"><h3>Manufacturer:</h3> <p>Endure Industries</p></div>
+                <div class="flex items-center space-x-3"><h3>Mfg Number:</h3> <p>ETNC705</p></div>
+                <div class="flex items-center space-x-3"><h3>Manufacturing Date:</h3> <p>ETNC705</p></div>
+                <div class="flex items-center space-x-3"><h3>Exp Date:</h3> <p>ETNC705</p></div></div>
+                <div class="px-10"><img src="{% static 'img/Product Actions (6) 1 (1).jpg' %}" alt="" srcset=""></div>
+            </div>
+        
+        
+        
+         
+
+
+
+
+
+
+
+            
+
+        
+
+
+
+
+
+
+        <div class="flex justify-between  space-x-2 ">
+            <div class="space-y-5">
+                <h3 class="text">Inventory UOM</h3>
+                <div class="flex items-center space-x-3"><h3>UOM - Inventory</h3> <h3 class="flex items-center">Box <button ><img src="{% static 'img/Polygon 5.svg' %}" alt="" srcset=""></button></h3></div>
+                <div class="flex items-center space-x-3 w-80"><h3>The Default UOM you would like to us to track inventory for this product</h3> </div>
+                
+                <h3 class="text">Inventory Usage</h3>
+                <div class="flex items-center space-x-3"><h3>UOM - Inventory</h3> <h3 class="flex items-center">Box <button ><img src="{% static 'img/Polygon 5.svg' %}" alt="" srcset=""></button></h3></div>
+                <div class="flex items-center space-x-3 w-80"><h3>The UOM that is most often pulled for a procedure</h3> 
+                </div>
+                
+            </div> <div class="px-10"><button >Hide</button></div>
+
+            
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <div class="flex flex-col  w-1/2 items-baseline space-x-2 space-y-7">
+        <div class="flex justify-between w-full">
+        <h3 class="text-indigo-400 ">Folder Tags</h3>
+        <div class=" border border-gray-400 text-zinc-600 text-center px-2 py-1 rounded-md text-xs">
+            add a tag
+        </div>
+        </div>
+
+        <div class="flex justify-between space-x-5 ">
+            <div class=" text-zinc-800 text-base font-bold ">Existing Tags:</div>
+            <div class=" border border-gray-400 text-zinc-600 text-center px-2 py-1 rounded-md text-xs">
+                add a tag
+            </div>
+            <div class=" border border-gray-400 text-zinc-600 text-center px-2 py-1 rounded-md text-xs">
+                add a tag
+            </div>
+            <div class=" border border-gray-400 text-zinc-600 text-center px-2 py-1 rounded-md text-xs">
+                add a tag
+            </div>
+
+        </div>
+
+
+        <div class="flex justify-between items-stretch space-x-7">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.3546" cy="10.2476" r="8.85261" fill="white" stroke="#484747" stroke-width="1.26466"/>
+                <path d="M11.2835 7.67738V15.027H9.32042V7.67738H11.2835ZM9.19816 5.76187C9.19816 5.47658 9.29778 5.2411 9.49703 5.05544C9.69628 4.86977 9.96346 4.77694 10.2986 4.77694C10.6291 4.77694 10.894 4.86977 11.0933 5.05544C11.2971 5.2411 11.399 5.47658 11.399 5.76187C11.399 6.04716 11.2971 6.28263 11.0933 6.4683C10.894 6.65396 10.6291 6.7468 10.2986 6.7468C9.96346 6.7468 9.69628 6.65396 9.49703 6.4683C9.29778 6.28263 9.19816 6.04716 9.19816 5.76187Z" fill="#676666"/>
+                </svg>
+                <div class="w-[300.10px] h-[50.02px] text-zinc-700 text-[15.18px] font-normal font-['PT Sans']">You can also assign a product to a custom folder for easy retrieval or grouping</div>
+                <div class="rounded-sm h-min  p-1 ring-1 ring-gray-800 text-zinc-500 text-xs">Create a New Folder</div>
+
+            </div>
+
+
+            <div class="flex flex-wrap gap-y-2 px-10  ">
+                
+                <div class="w-1/4">
+                    <div class="w-16 h-11 hover:bg-sky-700 rounded-md bg-sky-900 flex flex-col justify-center items-center">
+                        <span class="text-white text-xs font-bold">Folder</span>
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="w-16 h-11 hover:bg-sky-700 rounded-md bg-sky-900 flex flex-col justify-center items-center">
+                        <span class="text-white text-xs font-bold">Folder</span>
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="w-16 h-11 hover:bg-sky-700 rounded-md bg-sky-900 flex flex-col justify-center items-center">
+                        <span class="text-white text-xs font-bold">Folder</span>
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="w-16 h-11 hover:bg-sky-700 rounded-md bg-sky-900 flex flex-col justify-center items-center">
+                        <span class="text-white text-xs font-bold">Folder</span>
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="w-16 h-11 hover:bg-sky-700 rounded-md bg-sky-900 flex flex-col justify-center items-center">
+                        <span class="text-white text-xs font-bold">Folder</span>
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="w-16 h-11 hover:bg-sky-700 rounded-md bg-sky-900 flex flex-col justify-center items-center">
+                        <span class="text-white text-xs font-bold">Folder</span>
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="w-16 h-11 hover:bg-sky-700 rounded-md bg-sky-900 flex flex-col justify-center items-center">
+                        <span class="text-white text-xs font-bold">Folder</span>
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="w-16 h-11 hover:bg-sky-700 rounded-md bg-sky-900 flex flex-col justify-center items-center">
+                        <span class="text-white text-xs font-bold">Folder</span>
+                    </div>
+                </div>
+            
+              
+            
+                <!-- Repeat the same structure for other boxes -->
+            
+            </div>
+            
+    </div>
+
+</div>
+    <!-- Add your main content here -->   
+
+
+
+
+{% endblock %}
+
+
+{% block moduleinfo %}
+
+    <div class="flex flex-col flex-wrap m-5">
+        <h2 class=" text-gray-800 font-bold text-lg ">Module: Inventory</h2>
+        <div class="flex justify-between w-fit space-x-5 items-center">
+
+            <h2 class=" text-gray-800 font-semibold text-sm ">Product: 
+
+            </h2>
+            <p>Endotracheal Tube, Cuffed 9.0 mm</p>
+            <h3 class=" text-pink-500 font-medium">Brand
+            </h3>
+            <p class="text-black ">Endure Industries</p>
+
+        </div>
+        
+    </div>
+    {% endblock %}

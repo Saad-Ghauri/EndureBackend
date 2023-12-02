@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+  Inventory - Accounting
+{% endblock %}
+
+
+
+{% block content %} 
+<main class="">
+    <div class="flex flex-col flex-wrap m-5">
+        <h2 class=" text-gray-800 font-bold text-lg ">Module: Inventory</h2>
+        <div class="flex justify-between w-fit space-x-5 items-center">
+
+            <h2 class=" text-gray-800 font-semibold text-sm ">Product: 
+
+            </h2>
+            <p>Endotracheal Tube, Cuffed 9.0 mm</p>
+            <h3 class=" text-pink-500 font-medium">Brand
+            </h3>
+            <p class="text-black ">Endure Industries</p>
+
+        </div>
+        
+    </div>
+
+    
+
+<div class="flex justify-between p-5">
+
+
+        <div class="flex flex-col  space-y-5 font-semibold text-sm">
+
+            <h3>General</h3>
+            <h3>Description</h3>
+            <p class="w-80">Endotracheal Tubes are primarily used during intubation to help maintain steady airflow to patients</p>
+            <h3>Notes</h3>
+            <p class="w-80">It seems like most physicians like the curvature of this Endotracheal Tube more than the version from Cardinal Health.</p>
+
+
+            <div class="flex justify-between items-center space-x-2 ">
+                <div class="space-y-3">
+                <h3 class="text">Manufacturing</h3>
+                <div class="flex items-center space-x-3"><h3>Manufacturer:</h3> <p>Endure Industries</p></div>
+                <div class="flex items-center space-x-3"><h3>Mfg Number:</h3> <p>ETNC705</p></div>
+                <div class="flex items-center space-x-3"><h3>Manufacturing Date:</h3> <p>ETNC705</p></div>
+                <div class="flex items-center space-x-3"><h3>Exp Date:</h3> <p>ETNC705</p></div></div>
+                <div><img src="{% static 'img/Product Actions (6) 1 (1).jpg' %}" alt="" srcset=""></div>
+            </div>
+        
+        
+        
+         
+
+
+
+
+
+
+
+            
+
+        
+
+
+
+
+
+
+        <div class="flex justify-between  space-x-2 ">
+            <div class="space-y-5">
+                <h3 class="text">Inventory UOM</h3>
+                <div class="flex items-center space-x-3"><h3>UOM - Inventory</h3> <h3 class="flex items-center">Box <button ><img src="{% static 'img/Polygon 5.svg' %}" alt="" srcset=""></button></h3></div>
+                <div class="flex items-center space-x-3 w-80"><h3>The Default UOM you would like to us to track inventory for this product</h3> </div>
+                
+                <h3 class="text">Inventory Usage</h3>
+                <div class="flex items-center space-x-3"><h3>UOM - Inventory</h3> <h3 class="flex items-center">Box <button ><img src="{% static 'img/Polygon 5.svg' %}" alt="" srcset=""></button></h3></div>
+                <div class="flex items-center space-x-3 w-80"><h3>The UOM that is most often pulled for a procedure</h3> 
+                </div>
+                
+            </div> <div ><button >Hide</button></div>
+
+            
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <div class="flex flex-col">
+
+        <h3>Folder TAgs</h3>
+
+    </div>
+
+</div>
+    <!-- Add your main content here -->   
+</main>
+
+
+
+{% endblock %}

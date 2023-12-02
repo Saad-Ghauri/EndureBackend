@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+  Inventory - Inventory
+{% endblock %}
+
+
+
+
+
+{% block moduleinfo %}
+    <div class="flex flex-col flex-wrap m-5">
+        <h2 class=" text-gray-800 font-bold text-lg ">Module: Inventory</h2>
+        <div class="flex justify-between w-fit space-x-5 items-center">
+
+            <h2 class=" text-gray-800 font-semibold text-sm ">Product: 
+
+            </h2>
+            <p>Endotracheal Tube, Cuffed 9.0 mm</p>
+            <h3 class=" text-pink-500 font-medium">Brand
+            </h3>
+            <p class="text-black ">Endure Industries</p>
+
+            <h3 class=" text-pink-500 font-medium">Mfg#
+            </h3>
+            <h3 class=" text-black font-medium">ETNC905
+
+            </h3>
+
+        </div>
+        
+    </div>
+    {% endblock %}
+
+
+
+{% block content %} 
+
+<main>
+    
+        <!-- main content nav -->
+   
+
+
+
+        <div class="flex justify-between items-center  m-5 w-1/2">
+            <div class="flex flex-col space-y-5">
+                <h3 class="text-sm font-semibold">Sort by</h3> 
+                <h3 class="text-sm font-semibold">Total</h3> 
+                <h3 class="text-sm font-semibold">Allocated</h3> 
+            
+            
+            
+            
+            
+            
+            
+           
+                
+            </div>  
+           
+
+            <div class="flex flex-col space-y-5">
+                <div class="flex text-sm shadow-md">
+                    <div class="bg-zinc-700 p-1 text-white text-xs">ML
+    
+                    </div>
+                    <div class=" px-2 flex items-center ">
+                        master list
+                        <button><img src="{% static 'img/Expand Button.svg' %}" alt="" srcset=""></button>
+                    </div>
+                </div>
+
+            
+            
+                <div>25.6 Cases</div>
+                <div>25.6 Cases</div>
+            </div>
+            <div class="flex flex-col ">
+               <img src="/static/img/Group.svg" alt="" srcset="">
+            </div>
+
+
+        </div>
+
+        <table class="table text-sm  w-[990px] ml-10 border-separate  ">
+            <thead class="  ">
+                <tr class=" font-bold ">
+                    <th class="py-3  flex items-center space-x-2 shadow-md justify-center"><h4>Locations</h4> <button><img src="{% static '/img/Expand Button.svg' %}" alt="" srcset=""></button></th>
+                    {% for header in fruits %}
+                    <th class="py-3 ">{{ header }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody class="">
+                <tr class="shadow-xl  bg-white hover:bg-indigo-600 hover:text-white ">
+                    <td class="p-2">Name</td>
+                    <td class="p-2 ">Desc</td>
+                    <td class="p-2">Floor name</td>
+                    <td class="p-2">Room Name</td>
+                    <td class="p-2 text-center">Date</td>
+                    <td class="p-2 flex justify-center items-center">How imp <div><img src="Ellipse 16 (1).svg" alt="" srcset=""></div></td>
+                    <td class="p-2">Who</td>
+                    <td class="" ><img class="mx-7"  src="🦆 icon _virtual reality image thin_.svg" alt="" srcset=""></td>
+                </tr>
+                <tr class="shadow-xl bg-white hover:bg-indigo-600 hover:text-white ">
+                    <td class="p-2">Remove trash</td>
+                    <td class="p-2">remove cable packages (BAS)</td>
+                    <td class="p-2">Floor 1, A120</td>
+                    <td class="p-2">R.103A</td>
+                    <td class="p-2">30.07.2023</td>
+                    <td class="p-2 flex justify-center items-center">Low <div><img src="Ellipse 16 (1).svg" alt="" srcset=""></div></td>
+                    <td class="p-2">electrician</td>
+                    <td class="" ><img class="mx-7"  src="🦆 icon _virtual reality image thin_.svg" alt="" srcset=""></td>
+                </tr>
+                <tr class="shadow-xl  bg-white hover:bg-indigo-600 hover:text-white ">
+                    <td class="p-2">Remove trash</td>
+                    <td class="p-2">remove cable packages (BAS)</td>
+                    <td class="p-2">Floor 1, A120</td>
+                    <td class="p-2">R.103A</td>
+                    <td class="p-2">30.07.2023</td>
+                    <td class="p-2 flex justify-center items-center">Low <div><img src="Ellipse 16 (1).svg" alt="" srcset=""></div></td>
+                    <td class="p-2">electrician</td>
+                    <td class="" ><img class="mx-7"  src="🦆 icon _virtual reality image thin_.svg" alt="" srcset=""></td>
+                </tr>
+              
+               
+                
+                <!-- Add more rows using similar <tr> structures -->
+            </tbody>
+
+        </table>
+
+
+</main>
+
+
+
+{% endblock %}

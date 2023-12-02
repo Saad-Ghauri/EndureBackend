@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+  Inventory - Purchasing
+{% endblock %}
+
+{% block moduleinfo %}
+    <div class="flex flex-col flex-wrap m-5">
+        <h2 class=" text-gray-800 font-bold text-lg ">Module: Inventory</h2>
+        <div class="flex justify-between w-fit space-x-5 items-center">
+
+            <h2 class=" text-gray-800 font-semibold text-sm ">Product: 
+
+            </h2>
+            <p>Endotracheal Tube, Cuffed 9.0 mm</p>
+            <h3 class=" text-pink-500 font-medium">Brand
+            </h3>
+            <p class="text-black ">Endure Industries</p>
+
+        </div>
+        
+    </div>
+    {% endblock %}
+    
+
+{% block content %} 
+    
+
+
+
+
+    <div class="justify-between flex">
+
+        <div class="relative inline-flex text-left">
+            <div class="w-[24.94px] h-[19px] text-center text-white text-[13.06px] font-bold font-['Roboto']">GB</div>
+            <button id="dropdownBtn" type="button" class="inline-flex justify-center px-4 py-2 bg-white border border-gray-300 rounded-tl-sm rounded-bl-sm shadow">
+                Purchasing
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+    
+            <div id="dropdownMenu" class="hidden origin-top-left absolute left-0 mt-2 -ml-px w-[133px] bg-white border border-gray-300 rounded-sm shadow">
+                <div class="py-1">
+                    <!-- Add your dropdown items here -->
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Item 1</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Item 2</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Item 3</a>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            const dropdownBtn = document.getElementById('dropdownBtn');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+    
+            dropdownBtn.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('hidden');
+            });
+    
+            // Close the dropdown when clicking outside of it
+            window.addEventListener('click', (event) => {
+                if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        </script>
+
+    </div>
+
+
+
+
+
+    <!-- Add your main content here -->   
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <header class=" bg-gray-700 mx-auto h-[70px] max-mobile:bg-slate-500">
+
+        <div class="container flex justify-between  mx-auto">
+            <!-- Brand/logo -->
+
+            <!-- Navigation menu -->
+            <nav class="flex items-center  font-bold text-xl space-x-2"> 
+                <svg width="26" height="26" viewbox="0 0 26 26"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.5625 23.5625V17.8668C10.5625 17.4687 10.9688 17.0625 11.375 17.0625H14.625C15.0313 17.0625 15.4375 17.4687 15.4375 17.875V23.5625C15.4375 23.7779 15.5231 23.9846 15.6755 24.137C15.8279 24.2894 16.0345 24.375 16.25 24.375H22.75C22.9655 24.375 23.1722 24.2894 23.3245 24.137C23.4769 23.9846 23.5625 23.7779 23.5625 23.5625V12.1875C23.5627 12.0807 23.5418 11.9749 23.5011 11.8762C23.4604 11.7775 23.4007 11.6878 23.3253 11.6122L21.125 9.41358V4.06246C21.125 3.84697 21.0394 3.64031 20.887 3.48793C20.7347 3.33556 20.528 3.24996 20.3125 3.24996H18.6875C18.472 3.24996 18.2654 3.33556 18.113 3.48793C17.9606 3.64031 17.875 3.84697 17.875 4.06246V6.16358L13.5753 1.86221C13.4998 1.78654 13.4101 1.72651 13.3114 1.68555C13.2127 1.64459 13.1069 1.6235 13 1.6235C12.8931 1.6235 12.7873 1.64459 12.6886 1.68555C12.5899 1.72651 12.5002 1.78654 12.4248 1.86221L2.67475 11.6122C2.59935 11.6878 2.53958 11.7775 2.49887 11.8762C2.45817 11.9749 2.43731 12.0807 2.4375 12.1875V23.5625C2.4375 23.7779 2.5231 23.9846 2.67548 24.137C2.82785 24.2894 3.03451 24.375 3.25 24.375H9.75C9.96549 24.375 10.1722 24.2894 10.3245 24.137C10.4769 23.9846 10.5625 23.7779 10.5625 23.5625Z"
+                        fill="white" />
+                </svg>
+                <a href="#" class="text-white hover:text-gray-300">Home</a>
+
+            </nav>
+            <div class="w-[264.29px] h-[79px] flex justify-around items-center bg-white rounded shadow-md">
+                <img
+                src="https://docs.material-tailwind.com/img/face-2.jpg"
+                alt="avatar"
+                class="relative inline-block h-12 w-12 !rounded-full  object-cover object-center"
+              />
+
+              <div class="flex flex-col justify-start items-baseline">
+                <h1 class="font-medium text-zinc-600 text-xs">Michalle Ducamp</h1>
+                <h2 class="font-normal text-zinc-600 text-xs">mducamp@gmail.com</h2>
+              </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <div class="container  ">
+        <div class="flex">
+            <!-- Dashboard Sidebar -->
+            <aside class="p-1 w-8 min-h-screen  bg-slate-500">
+                
+                <ul class="flex flex-col items-center space-y-5">
+                    <li class="">
+                        <a href="">
+                           <img src="{% static 'img/ic_twotone-notifications-none.svg' %}" class="" alt="" srcset="">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="{% static 'img/entypo_chat.svg' %}" alt="" srcset="">
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="w-48 min-h-screen bg-zinc-800 p-4 text-white">
+
+
+                <ul class="space-y-8 mx-3 py-5">
+                    <li class="flex justify-start items-center space-x-3 ">
+                        <img src="{% static 'img/Group 122.svg' %}" alt="" srcset="">
+                        <a href="#" class="items-center flex hover:underline">Account </a>
+                    </li>
+                    <li class="flex space-x-3 items-center ">
+                       <img src="{% static 'img/Group 123.svg' %}" alt="" srcset="">
+
+                        <a href="#" class=" hover:underline">Marketplace</a>
+                    </li>
+
+                    <li class="flex space-x-3 items-center">
+                        <img src="{% static 'img/Group 124.svg' %}" alt="" srcset="">
+                        <a href="">Dashboard</a>
+                    </li>
+
+
+                    <!-- Add more dashboard links here -->
+                    <h2 class="text-white text-lg text-center mb-4">Inventory</h2>
+
+
+                </ul>
+
+                <div class="bg-slate-800">
+                <ul class="space-y-5 p-5 w-max  ">
+
+
+                    <li class="flex items-center space-x-3 ">
+                        <svg width="8" height="8" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" fill="#65ADDA" />
+                        </svg>
+
+
+                        <a href="#" class=" hover:underline">Stock
+                        </a>
+                    </li>
+                    <li class="flex items-center space-x-3 ">
+                        <svg width="8" height="8" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" fill="#FD5170" />
+                        </svg>
+
+
+                        <a href="#" class=" hover:underline">Network
+                        </a>
+                    </li>
+
+                    <li class="flex items-center space-x-3 ">
+                        <svg width="8" height="8" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" fill="#EB8BF3" />
+                        </svg>
+
+
+                        <a href="#" class=" hover:underline">Usage Models
+                        </a>
+                    </li>
+                    <li class="flex items-center space-x-3 ">
+                        <svg width="8" height="8" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" fill="#EB8F4D" />
+                        </svg>
+
+
+                        <a href="#" class=" hover:underline">Vendor Central
+                        </a>
+                    </li>
+
+                    <li class="flex items-center space-x-3 ">
+                        <svg width="8" height="8" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="4" fill="#FFE7AA" />
+                        </svg>
+
+
+                        <a href="#" class=" hover:underline">Commitments
+                        </a>
+                    </li>
+
+
+                    <!-- Add more dashboard links here -->
+                </ul></div>
+
+            </aside>
+
+            <!-- Main Content -->
+            <main>
+
+                {% block moduleinfo %}
+                {% endblock %}
+
+                <div class="flex justify-between items-end space-x-5 px-4">
+                    <div>
+                        <nav class="bg-neutral-100 font-normal text-sm shadow-md bg-opacity-50 w-[954px]">
+                            <ul class="flex justify-start mx-5 space-x-5 font-medium text-gray-700">
+                                <li class="  p-2  {% if request.path == '/inventory/characteristics/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'characteristics' %}">Characteristics</a></li>
+                                <li class=" p-2   {% if request.path == '/inventory/inventory/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'inventory' %}">Inventory</a></li>
+                                <li class="p-2 {% if request.path == '/inventory/vendors/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %} "><a href="{% url 'vendors' %}">Vendors</a></li>
+                                <li class=" p-2   {% if request.path == '/inventory/accounting/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'accounting' %}">Acounting</a></li>
+                                <li class=" p-2   {% if request.path == '/inventory/purchasing/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'purchasing' %}">Purchasing</a></li>
+                                <li class=" p-2   {% if request.path == '/inventory/purchasing/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600 {% endif %}"><a href="{% url 'purchasing' %}">Locations</a></li>
+                                <li class=" p-2   {% if request.path == '/inventory/purchasing/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'purchasing' %}">Subtitutes</a></li>
+                                <li class=" p-2   {% if request.path == '/inventory/vendors/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'vendors' %}">Chuchi</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                
+                    <button class="flex items-center ">Edit <img class="" src="{% static 'img/ant-design_edit-twotone.svg' %}" alt="" srcset=""></button>
+                
+                    </div>
+
+                {% block content %}
+                
+                {% endblock %}
+
+                
+            </main>
+        
+        
+        
+        
+        
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
