@@ -9,3 +9,5 @@ class Vendor(models.Model):
     additional_terms = models.TextField()
     representatives = models.CharField(max_length=255)
     status = models.CharField(max_length=50)
+    def __str__(self):
+        return self.name

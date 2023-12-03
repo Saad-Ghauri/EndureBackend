@@ -17,7 +17,7 @@ def Accounting_View(request):
     return render(request,'accounting.html')
 
 def Purchasing_View(request):
-    return render(request,'pur.html')
+    return render(request,'pur.html', Purchasing_table)
 
 def Vendors_View(request):
    vendors = Vendor.objects.all()
@@ -36,4 +36,6 @@ context = {
 
 
 
-
+Purchasing_table = {
+    'headers' : ['PO', "Vendor", 'Date', 'Fulfullment', 'Items', 'Requested', 'Purchased', 'Alerts']
+}
