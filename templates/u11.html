@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base1.html" %}
 {% load static %}
 
 
@@ -12,3 +12,63 @@
        
     </div>
     {% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="flex justify-between items-center max-w-full gap-x-10 mx-5">
+    <div class="w-[147px] h-[26.10px] bg-indigo-400 rounded shadow"></div>
+    <div class="w-[147px] h-[26.10px] bg-slate-50 rounded shadow-lg"></div>
+
+
+
+    <div class="w-[166px] flex h-[31px] text-zinc-700 text-xs font-normal font-['PT Sans']">
+        <span>
+        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="7.09069" cy="8.0255" r="6.61797" fill="white" stroke="#484747" stroke-width="0.945425"/>
+        <path d="M7.78529 11.88H6.31268V6.38565H7.78529V11.88ZM6.22635 4.96382C6.22635 4.74377 6.29913 4.56266 6.4447 4.42047C6.59366 4.27829 6.79508 4.2072 7.04898 4.2072C7.29949 4.2072 7.49923 4.27829 7.64818 4.42047C7.79713 4.56266 7.87161 4.74377 7.87161 4.96382C7.87161 5.18725 7.79544 5.37005 7.6431 5.51224C7.49415 5.65442 7.29611 5.72551 7.04898 5.72551C6.80185 5.72551 6.60212 5.65442 6.44978 5.51224C6.30083 5.37005 6.22635 5.18725 6.22635 4.96382Z" fill="#676666"/>
+        </svg>
+        </span>
+        You can use keywords or associated tags to filter your Vendor List
+    </div>
+
+
+
+
+    
+
+    <div class="relative max-w-md mx-auto bg-white rounded-lg" x-data="{ search: '' }">
+        <div class="w-full relative">
+            <input type="search" class="w-[190px] h-[25px] px-8 py-1 text-gray-800 rounded-full focus:outline-none"
+                placeholder="" x-model="search">
+            <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                <button type="submit" class="flex items-center justify-center w-10 h-10 text-white rounded-full"
+                    :class="(search.length > 0) ? 'bg-purple-500' : 'bg-gray-500 cursor-not-allowed'"
+                    :disabled="search.length == 0">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.04264 6.19263L7.83713 7.05386L8.63162 7.24261L10.6178 9.59013L10.2206 10.3451L9.26841 10.6401L7.08357 8.18636V7.62011L6.44678 6.86511L7.04264 6.19263Z" fill="#655F5F"/>
+                        <path d="M7.42786 4.30516C7.42786 5.81675 6.12912 7.09438 4.46094 7.09438C2.79276 7.09438 1.49402 5.81675 1.49402 4.30516C1.49402 2.79356 2.79276 1.51593 4.46094 1.51593C6.12912 1.51593 7.42786 2.79356 7.42786 4.30516Z" fill="white" stroke="#645F5F" stroke-width="1.21656"/>
+                        </svg>
+                        
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+        <div class=" self-start">
+            <img class="w-[181.51px] h-[147px]" src="https://via.placeholder.com/182x147" />
+        </div>
+
+
+</div>
+
+<div class="mx-5">
+    Tags:
+</div>
+
+
+
+{% endblock %}
