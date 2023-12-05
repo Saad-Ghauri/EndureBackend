@@ -1,1 +1,1 @@
-web: gunicorn IMS.wsgi
+web: gunicorn IMS.wsgi:application
