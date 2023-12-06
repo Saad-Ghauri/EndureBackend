@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-q*4=+!0ao@cdk@6l7f+3svc*^!(!9k#^idq$%pfq+)+0_%5r3o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['endureindustries.up.railway.app', 'localhost']
+ALLOWED_HOSTS = ['endureindustries.up.railway.app', '*']
 
 
 # Application definition
@@ -71,7 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'IMS.wsgi.application'
-CSRF_TRUSTED_ORIGINS = ['endureindustries.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://sitex.up.railway.app']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
