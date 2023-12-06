@@ -39,3 +39,7 @@ context = {
 Purchasing_table = {
     'headers' : ['PO', "Vendor", 'Date', 'Fulfullment', 'Items', 'Requested', 'Purchased', 'Alerts']
 }
+
+
+def index(request):
+    return render(request,'characteristics.html')

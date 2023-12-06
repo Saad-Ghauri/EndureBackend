@@ -10,4 +10,5 @@ urlpatterns = [
     path('purchasing/', views.Purchasing_View, name='purchasing'),
     path('vendors/', views.Vendors_View, name='vendors'),
     # path('u1/', views.Utilization_view_11, name='u1'),
+    path('', views.index, name= 'home')
 ]
