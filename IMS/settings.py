@@ -71,7 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'IMS.wsgi.application'
-
+CSRF_TRUSTED_ORIGINS = ['endureindustries.up.railway.app']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
