@@ -42,4 +42,4 @@ Purchasing_table = {
 
 
 def index(request):
-    return render(request,'characteristics.html')
+    return render(request,'char.html')
