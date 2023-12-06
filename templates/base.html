@@ -50,7 +50,7 @@
     <div class="container  ">
         <div class="flex">
             <!-- Dashboard Sidebar -->
-            <aside class="p-1 w-8 min-h-screen  bg-slate-500">
+            <aside class="p-1 w-8 h-screen bg-slate-500">
                 
                 <ul class="flex flex-col items-center space-y-5">
                     <li class="">
@@ -66,7 +66,7 @@
                     </li>
                 </ul>
             </aside>
-            <aside class="w-48 min-h-screen bg-zinc-800 p-4 text-white">
+            <aside class="w-48 h-screen bg-zinc-800 p-4 text-white">
 
 
                 <ul class="space-y-8 mx-3 py-5">
@@ -165,9 +165,9 @@
                                 <li class="p-2 {% if request.path == '/inventory/vendors/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %} "><a href="{% url 'vendors' %}">Vendors</a></li>
                                 <li class=" p-2   {% if request.path == '/inventory/accounting/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'accounting' %}">Acounting</a></li>
                                 <li class=" p-2   {% if request.path == '/inventory/purchasing/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'purchasing' %}">Purchasing</a></li>
-                                <li class=" p-2   {% if request.path == '/inventory/purchasing/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600 {% endif %}"><a href="{% url 'purchasing' %}">Locations</a></li>
-                                <li class=" p-2   {% if request.path == '/inventory/purchasing/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'purchasing' %}">Subtitutes</a></li>
-                                <li class=" p-2   {% if request.path == '/inventory/vendors/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'vendors' %}">Chuchi</a></li>
+                                <li class=" p-2   "><a href="{% url 'purchasing' %}">Locations</a></li>
+                                <li class=" p-2   "><a href="{% url 'purchasing' %}">Subtitutes</a></li>
+                                <li class=" p-2  "><a href="{% url 'vendors' %}">Chuchi</a></li>
                             </ul>
                         </nav>
                     </div>
