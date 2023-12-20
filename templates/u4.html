@@ -17,8 +17,9 @@
 {% block content %}
 
 <div class="flex justify-between items-center max-w-full gap-x-10 mx-5">
-  <div class="w-[147px] h-[26.10px] bg-indigo-400 rounded shadow"></div>
-  <div class="w-[147px] h-[26.10px] bg-slate-50 rounded shadow-lg"></div>
+  <div class="w-[147px] h-[26.10px] text-sm text-center items-center border-2 flex justify-center text-white bg-indigo-400 rounded shadow">Set Filter</div>
+  <div class="w-[147px] h-[26.10px] text-sm text-center items-center border-2 flex justify-center  bg-slate-50 rounded shadow-lg"> Draft List</div>
+
 
 
 
@@ -65,7 +66,7 @@
 
 <div class="mx-5">
   Tags:
-  <div class="rounded-sm w-32 text-xs font-bold text-zinc-600 text-center ring-2 ring-zinc-600">
+  <div class="rounded-sm w-32 my-5 text-xs font-bold text-zinc-600 text-center ring-2 ring-zinc-600">
       Anesthesia
   </div>
 </div>
@@ -110,7 +111,7 @@
 
 
 
-<table class="table-auto w-full text-center">
+<table class="border-separate border-spacing-y-5  w-11/12 mx-auto text-center">
   <thead>
     <tr>
       {% for x in headers %}
@@ -121,7 +122,7 @@
     </tr>
   </thead>
   <tbody class="text-xs font-medium">
-    <tr>
+    <tr class="bg-gray-50">
       <td>001</td>
       <td>10/22/20</td>
      
