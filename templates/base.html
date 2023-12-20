@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>{% block title %} {% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script> 
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
@@ -12,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="font-['Roboto']">
     <header class=" bg-gray-700 mx-auto h-[70px] max-mobile:bg-slate-500">
 
         <div class="container flex justify-between  mx-auto">
@@ -50,23 +51,23 @@
     <div class="container  ">
         <div class="flex">
             <!-- Dashboard Sidebar -->
-            <aside class="p-1 w-8  bg-slate-500">
+            <aside class=" p-2 min-h-screen  bg-gray-600">
                 
-                <ul class="flex flex-col items-center space-y-5">
-                    <li class="">
+                <ul class="py-5 flex flex-col justify-between items-center space-y-5">
+                    <li class=" ">
                         <a href="">
-                           <img src="{% static 'img/ic_twotone-notifications-none.svg' %}" class="" alt="" srcset="">
+                           <img src="{% static 'img/ic_twotone-notifications-none.svg' %}" class="w-8" alt="" srcset="">
                         </a>
 
                     </li>
                     <li>
                         <a href="">
-                            <img src="{% static 'img/entypo_chat.svg' %}" alt="" srcset="">
+                            <img src="{% static 'img/entypo_chat.svg' %}" alt="" class="w-6" srcset="">
                         </a>
                     </li>
                 </ul>
             </aside>
-            <aside class="w-48 py-4 min-h-screen bg-zinc-800 px-4 text-white">
+            <aside class="w-48 min-h-screen bg-zinc-800 p-4 text-white font-['PT Sans']">
 
 
                 <ul class="space-y-8 mx-3 py-5">
