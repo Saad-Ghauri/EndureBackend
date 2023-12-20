@@ -152,14 +152,14 @@
             </aside>
 
             <!-- Main Content -->
-            <main>
+            <main class="">
 
                 {% block moduleinfo %}
                 {% endblock %}
 
-                <div class="flex justify-between items-end space-x-5 px-4">
+                <div class="flex justify-between w-full items-end space-x-5 px-4">
                     <div>
-                        <nav class="bg-neutral-100 font-normal text-sm shadow-md bg-opacity-50 w-[954px]">
+                        <nav class="bg-neutral-100 text-center text-gray-600 text-sm font-medium  shadow-md bg-opacity-50 w-[954px]">
                             <ul class="flex justify-start mx-5 space-x-5 font-medium text-gray-700">
                                 <li class="  p-2  {% if request.path == '/inventory/characteristics/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'characteristics' %}">Characteristics</a></li>
                                 <li class=" p-2   {% if request.path == '/inventory/inventory/' %} px-4 py-2 bg-gray-700 text-white border-l-4 border-pink-600{% endif %}"><a href="{% url 'inventory' %}">Inventory</a></li>
